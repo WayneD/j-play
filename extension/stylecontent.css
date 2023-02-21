@@ -1,0 +1,95 @@
+.pLaYpopup {
+	position: absolute;
+	padding: 5;
+	border: 1px solid black;
+	background: #0000AF;
+	font-size: 2.6em;
+	margin-top: 0;
+	font-weight: bold;
+	z-index: 3;
+}
+
+.pLaYclueTbl {
+	width: 100%;
+	height: 100%;
+	border: 2px gold solid;
+	padding: 0em 1em;
+	background-color: #0000AF;
+	font-size: 1.0em;
+	font-weight: bold;
+}
+
+.pLaYnum {
+	font-size: 4em;
+	height: 1.4em;
+	padding-top: 0.1em;
+	font-weight: bold;
+	font-family: "Helvetica Narrow","Arial Narrow",Tahoma,Arial,Helvetica,sans-serif;
+	border: 2px solid black;
+	text-align: center;
+}
+
+.pLaYbignum {
+	font-size: 3.5em;
+	height: 1.6em;
+	padding-top: 0.15em;
+}
+
+.pLaYmyBtn {
+	font-size: 1.5em;
+	padding-left: 0.5em;
+}
+
+#scores_new a:hover {
+	text-decoration: none;
+}
+
+.pLaYbeepbeep {
+	font-size: 75%;
+	font-style: italic;
+	color: red;
+}
+
+.pLaYdollar {
+	font-size: 90%;
+	vertical-align: top;
+}
+
+.pLaYcluecrew {
+	font-size: 50%;
+	text-transform: none;
+	text-shadow: none;
+}
+
+.pLaYname {
+	border: 2px grey solid;
+	margin-top: 0.5em;
+	font-weight: bold;
+	text-align: center;
+}
+
+.pLaYfinal {
+	color: gold;
+	font-size: 2em;
+	font-weight: bold;
+	padding-top: 0.2em;
+	text-align: center;
+}
+
+.pLaYgoldBorder {
+	border: 2px gold solid;
+}
+
+.pLaYkey {
+	text-align: center;
+	font-weight: bold;
+	font-family: courier;
+	color: gold;
+}
+
+.pLaYnonKey {
+	font-size: 85%;
+	font-weight: normal;
+	font-family: arial;
+	color: white;
+}
