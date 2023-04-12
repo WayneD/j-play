@@ -412,9 +412,9 @@ function createFinalJeopardy(containing_el, old_el)
     clue.fj_order = [ ];
     clue.response = { };
     clue.scores = { Combo_Coryat: 0 };
-    clue.query = tweakClue(parseOnMouse(clue.trigger.attributes.onmouseout));
+    clue.query = tweakClue(document.getElementById(clue.id).innerHTML);
 
-    let m = parseOnMouse(clue.trigger.attributes.onmouseover).match(/^(.*)(<table.+)$/);
+    let m = document.getElementById(clue.id + '_r').innerHTML.match(/^(.*)(<table.+)$/);
     clue.banter = m[1];
     let response = m[2];
 
@@ -701,19 +701,12 @@ function tweakClue(clue)
     );
 }
 
-// Parse an onmouse* setting that calls the toggle() function to set clue or answer text.
-function parseOnMouse(attr)
-{
-    txt = attr.value.replace(/.*toggle\(\S+, \S+, '/, '').replace(/'\);?$/, '');
-    return txt.replace(/\\(.)/g, '$1');
-}
-
 function finishClueParsing(clue)
 {
     if (!clue.response) {
-        clue.query = tweakClue(parseOnMouse(clue.trigger.attributes.onmouseout));
+        clue.query = tweakClue(document.getElementById(clue.id).innerHTML);
 
-        let html = parseOnMouse(clue.trigger.attributes.onmouseover);
+        let html = document.getElementById(clue.id + '_r').innerHTML;
         let m = html.match(/^([^<].+?)?<em class.+?>(.*?)<\/em>(.+)/);
         if (!m)
             m = [ 0, null, 'UNMATCHED', 'UNMATCHED' ];
